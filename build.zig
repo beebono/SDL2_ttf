@@ -20,9 +20,8 @@ pub fn build(b: *std.Build) void {
         .root_module = mod,
     });
     mod.addIncludePath(upstream.path("."));
-    mod.addCSourceFiles(.{
-        .root = upstream.path("."),
-        .files = srcs,
+    mod.addCSourceFile(.{
+        .file = upstream.path("SDL_ttf.c"),
     });
 
     const freetype_dep = b.dependency("freetype", .{
@@ -43,9 +42,3 @@ pub fn build(b: *std.Build) void {
 
     b.installArtifact(lib);
 }
-
-const srcs: []const []const u8 = &.{
-    "glfont.c",
-    "showfont.c",
-    "SDL_ttf.c",
-};
