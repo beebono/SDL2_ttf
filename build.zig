@@ -37,8 +37,6 @@ pub fn build(b: *std.Build) void {
     });
     mod.linkLibrary(sdl_dep.artifact("SDL2"));
 
-    lib.installHeadersDirectory(upstream.path("SDL_ttf.h"), "SDL_ttf.h", .{});
-
     b.installArtifact(lib);
 }
 
