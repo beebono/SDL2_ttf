@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.15.2",
     .dependencies = .{
         .SDL = .{
-            .url = "git+https://github.com/beebono/SDL.git#8d2444eaed12dccc781f3c2e601939d1e1ee20c6",
-            .hash = "SDL-2.32.10-JToi33WqEgE4w7or9ziH8fLB2tvwSkP63ogXjQL0UmPI",
+            .url = "git+https://github.com/beebono/SDL.git#eca3439348ab4d1e914df5f784af585566788d21",
+            .hash = "SDL-2.32.10-JToi39-iEgFlPD7fibg3wKMjKsgIM8WUfo3opYdqfotl",
         },
         .freetype = .{
             .url = "git+https://github.com/allyourcodebase/freetype.git#884fd2235e6ae1ec4306eda30b3259f20930ed2e",
